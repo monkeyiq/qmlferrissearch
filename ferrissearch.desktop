@@ -1,0 +1,9 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Name=Ferris Search
+Exec=/home/user/ferrissearch/run.sh
+Icon=/home/user/ferrissearch/icon.png
+X-Window-Icon=/home/user/ferrissearch/icon.png
+X-Window-Icon-Dimmed=/home/user/ferrissearch/icon.png
