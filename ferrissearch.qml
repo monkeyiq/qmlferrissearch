@@ -307,7 +307,7 @@ Rectangle {
         id: listView
 	z: 0
 	y: 60; x: 20
-	width: 814; height: 860
+	width: 814; height: 350
         model: resultsModel
         delegate: listDelegate
     }
@@ -345,7 +345,7 @@ Rectangle {
 //	    anchors.right : parent
 	}
         TextButton {
-	    height: 30
+	    height: 40
 	    width:  130
 	    text: "Config"
 	    onClicked: config.visible = true	    
@@ -371,7 +371,8 @@ Rectangle {
 	var earl = restURL.text + "?" + "method=eaquery";
 	earl = earl + "&q=" + t;
 	earl = earl + "&limit=" + "500";
-	earl = earl + "&eanames=name,url,size,mtime-display,index:docid,annotation,atime";
+//	earl = earl + "&eanames=name,url,size,mtime-display,index:docid,annotation,atime";
+	earl = earl + "&eanames=name,url,size,mtime-display,index:docid,index:annotation,atime";
 	earl = earl + "&eaindexpath=" + eaindexpath.text;
 	earl = earl + "&stub=" + "1";
 	console.log("earl:" + earl);
